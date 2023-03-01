@@ -1,4 +1,3 @@
-//your code here
 const displayAns = document.querySelector("#input");
 
 const clearButton = document.querySelector("#clr");
