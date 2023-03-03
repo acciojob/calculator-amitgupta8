@@ -6,27 +6,24 @@
 </head>
 <body>
 	<div class="calculator">
-		<input type="text" name="display" id="input" readonly>
-		<button id="clr">C</button>
-		<button id="divide">/</button>
-		<button id="multiply">*</button>
-		<button id="clear"><=</button>
-		<button id="block7" >7</button>
-		<button id="block8">8</button>
-		<button id="block9">9</button>
-		<button id="minus">-</button>
-		<button id="block4">4</button>
-		<button id="block5">5</button>
-		<button id="block6">6</button>
-		<button id="plus">+</button>
-		<button id="block1">1</button>
-		<button id="block2">2</button>
-		<button id="block3">3</button>
-		<button id="dot">.</button>
-		<button id="start">(</button>
-		<button id="block0">0</button>
-		<button id="end">)</button>
-          <button id="ans">=</button>
+		<input type="text" id="input" disabled>
+		<button id="clr" onclick="clearInput()">C</button>
+		<button id="divide" onclick="addToInput('/')">/</button>
+		<button id="multiply" onclick="addToInput('*')">*</button>
+		<button id="block7" onclick="addToInput('7')">7</button>
+		<button id="block8" onclick="addToInput('8')">8</button>
+		<button id="block9" onclick="addToInput('9')">9</button>
+		<button id="minus" onclick="addToInput('-')">-</button>
+		<button id="block4" onclick="addToInput('4')">4</button>
+		<button id="block5" onclick="addToInput('5')">5</button>
+		<button id="block6" onclick="addToInput('6')">6</button>
+		<button id="plus" onclick="addToInput('+')">+</button>
+		<button id="block1" onclick="addToInput('1')">1</button>
+		<button id="block2" onclick="addToInput('2')">2</button>
+		<button id="block3" onclick="addToInput('3')">3</button>
+		<button id="ans" onclick="calculate()">=</button>
+		<button id="block0" onclick="addToInput('0')">0</button>
+		<button id="dot" onclick="addToInput('.')">.</button>
 	</div>
     <script src="./script.js"></script>
 </body>
